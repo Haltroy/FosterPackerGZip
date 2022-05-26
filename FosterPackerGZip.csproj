@@ -1,11 +1,29 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+	  <VersionPrefix>1.0</VersionPrefix>
     <TargetFramework>netstandard2.0</TargetFramework>
+	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	  <Description>GZip Compression support for Foster.</Description>
+	  <Copyright>Copyright (C) 2022 haltroy</Copyright>
+	  <PackageProjectUrl>https://github.com/haltroy/FosterPackerGZip</PackageProjectUrl>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
+	  <RepositoryUrl>https://github.com/haltroy/FosterPackerGZip</RepositoryUrl>
+	  <RepositoryType>git</RepositoryType>
+	  <PackageTags>foster compression gzip haltroy htupdate</PackageTags>
+	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
+	  <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\Foster\Foster.csproj" />
   </ItemGroup>
+
+	<ItemGroup>
+		<None Update="README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
 
 </Project>
